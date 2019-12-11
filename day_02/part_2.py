@@ -5,8 +5,8 @@
 if __name__ == '__main__':
     for noun in range(100):
         for verb in range(100):
-            with open("input.txt") as fo:
-                data = [int(i) for i in fo.read().strip().split(",")]
+            with open("input.txt") as fi:
+                data = [int(i) for i in fi.read().strip().split(",")]
             data[1] = noun
             data[2] = verb
 
