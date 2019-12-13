@@ -17,6 +17,7 @@ def jump(orbits, src, dst):
         for o in orbited_by:
             if dst in get_orbits(o):
                 count += jump(orbits, o, dst)
+                break
     else:
         for target,orbited_by in orbits.items():
             if src in orbited_by:
