@@ -80,8 +80,8 @@ if __name__ == '__main__':
     max_output = 0
     for perm in itertools.permutations(range(5)):
         output = 0
-        for inputs in perm:
-            output = computer([inputs, output])
+        for num in perm:
+            output = computer([num, output])
         if output > max_output:
             max_output = output
             max_inputs = perm
